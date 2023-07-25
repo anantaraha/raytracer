@@ -1,31 +1,36 @@
-const MONITOR_WIDTH = 288;
-const MONITOR_HEIGHT = 216;
-const CANVAS_WIDTH = 288;
-const CANVAS_HEIGHT = 216;
+const MONITOR_WIDTH = 480;
+const MONITOR_HEIGHT = 360;
+const CANVAS_WIDTH = 480;
+const CANVAS_HEIGHT = 360;
 const VIEWPORT_WIDTH = 4;
 const VIEWPORT_HEIGHT = 3;
 const VIEWPORT_D = 3;
-const INFINITY = Infinity;
 const BACKGROUND_COLOR = [0, 0, 0];
 const demoScene = {
     spheres: [
         {
             radius: 4,
             center: [0, -4, 14],
-            color: [255, 0, 0],
-            specular: 100
+            color: [213, 0, 0],
+            specular: 80
         },
         {
             radius: 4,
             center: [8, 0, 16],
-            color: [0, 255, 0],
-            specular: 100
+            color: [213, 0, 249],
+            specular: 80
         },
         {
             radius: 4,
             center: [-8, 0, 16],
-            color: [0, 0, 255],
-            specular: 100
+            color: [255, 255, 0],
+            specular: 80
+        },
+        {
+            radius: 4,
+            center: [0, 5, 20],
+            color: [0, 200, 83],
+            specular: 80
         }
     ],
     lights: [
@@ -33,19 +38,19 @@ const demoScene = {
             type: 'ambient',
             position: null,
             direction: null,
-            intensity: 0.3
+            intensity: 0.2
         },
         {
             type: 'point',
             position: [8, 4, 0],
             direction: null,
-            intensity: 0.6
+            intensity: 0.7
         },
         {
             type: 'directional',
             position: null,
             direction: [4, 16, 16],
-            intensity: 0.2
+            intensity: 0.4
         }
     ]
 };
