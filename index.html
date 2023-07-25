@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>
+        Basic Raytracer
+    </title>
+</head>
+
+<body>
+    <div class="flex flex-col w-fit h-fit md:w-full md:h-full">
+        <div class="flex flex-col md:flex-row w-full h-fit p-2 bg-slate-200">
+            <div class="text-3xl w-fit md:w-80 font-thin mx-auto md:text-right px-2 text-black">
+                Basic Raytracer
+            </div>
+            <div
+                class="block w-fit text-center md:text-left px-2 text-sm md:border-l italic border-gray-400 text-gray-400">
+                I read the book <strong>Computer Graphics from Scratch</strong> written by Gabriel Gambetta and felt a sudden urge to create this tiny raytracer. It is minimal, rendering only spheres (no other shapes) with no camera movement, reflection, or other complex features. However, more spheres and lights can be added using JSON.
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row w-fit md:w-full h-fit md:h-full bg-red-100" id="root">
+            <div class="text-center w-fit h-min md:h-full bg-stone-300">
+                <div class="container w-fit h-fit" id="preview_grid"></div>
+                <div class="container w-full h-fit text-center text-s pb-1 bg-purple-600 text-purple-200"
+                    id="preview_message">
+                    <br>
+                </div>
+                <button
+                    class="bg-gray-600 px-8 py-2 m-2 text-white active:bg-gray-800 disabled:bg-gray-400 disabled:text-gray-200"
+                    id="btn_reset">Reset</button>
+            </div>
+            <textarea
+                class="w-full h-80 md:w-full md:h-full bg-orange-50 break-all font-mono text-sm p-1 resize-none focus:outline-none"
+                placeholder="JSON description of spheres and lights" id="input_code">
+                </textarea>
+        </div>
+    </div>
+</body>
+
+</html>
