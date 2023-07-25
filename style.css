@@ -7,8 +7,8 @@ body {
 
 #preview_grid {
   display: grid;
-  grid-template-columns: repeat(480, 1px);
-  grid-template-rows: repeat(360, 1px);
+  grid-template-columns: repeat(280, 2px);
+  grid-template-rows: repeat(210, 2px);
   gap: 0px 0px;
 }
 
